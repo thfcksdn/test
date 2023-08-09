@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
+  font-style: normal;
+}
+
+:root {
+  /* --header-height:3rem; */
+
+  --hue-color: 26;
+
+  /* colors - 테마 색 바꿀 때 메인 색상 변수로 지정 */
+
+  /* black - colors */
+  --text-color: hsl(var(--hue-color), 4%, 18%); /* footer-container-color */
+  --body-color: hsl(var(--hue-color), 8%, 17%); /* hsl(26, 8%, 17%) */
+
+  /* white - colors */
+  --white-color: hsl(0, 0%, 100%);
+  --white-color-second: hsl(0, 17%, 98%);
+
+  /* green - colors */
+  --green-color-first: hsl(170, 100%, 31%); /*skills-wrap, hr-color*/
+  --green-color--second: hsl(150, 33%, 84%);
+
+  /* font 그리고 typography */
+  --body-font: "GangwonEdu_OTFBoldA", sans-serif;
+
+  --very-big-font-size: 2.5rem;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.05rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /* font weight */
+  --font-medium: 700;
+  --font-semi-bold: 800;
+
+  /* Margin & Padding */
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mp-0-1: 0.1rem;
+  --mp-0-25: 0.25rem;
+  --mp-0-5: 0.5rem;
+  --mp-0-75: 0.75rem;
+  --mp-1: 1.5rem;
+  --mp-2: 2rem; /*30px*/
+  --mp-2-5: 2.5rem;
+  --mp-3: 3rem;
+  --mp-3-5: 3.5rem;
+  --mp-4: 4rem;
+  --mp-5: 5rem;
+  --mp-6: 6rem;
+
+  /* Z index  */
+  --z-tooltip: 10;
+  --z-fixed: 100; /*위치가 고정되어 보여져야 할 중요도*/
+  --z-modal: 1000; /*팝업 창과 비슷한 개념으로 기본레이아웃보다 중요도가 높아야 하는 요소*/
+}
+
+/* Font size for Large devices 
+중간(태블릿)이상의 매체일 때에 대한 글자 크기에 대한 전역 속성 */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/* BASE */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--body-color);
+}
+
+p,
+span,
+button,
+ul,
+hr,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "GangwonEdu_OTFBoldA", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+textarea {
+  cursor: pointer;
+  outline: none;
+
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--text-color);
+}
+
+input:focus,
+button:focus,
+select:focus,
+textarea:focus{
+  outline: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.grid-box {
+  display: grid;
+}
+
+.center-box {
+  justify-content: center;
+  align-items: center;
+}
+
+.part-title {
+  padding-top: 60px;
+
+  border-bottom: 3px solid var(--green-color-first);
+
+  font-size: 48px;
+}
+
+.white-text {
+  color: var(--white-color);
+}
+
+.fa-pagelines,
+.fa-edit {
+  color: var(--green-color-first);
+}
+
+.icon-color:hover {
+  color: var(--green-color-first);
+}
+
+.left-text {
+  text-align: left;
+}
+
+.icons {
+  font-size: var(--big-font-size);
+}
+
+/* 영역별 제목 hr 간격설정 */
+.portfolio-hr {
+  border-bottom: 3px solid var(--green-color-first);
+  margin: 0 15%;
+}
+
+.before-career-hr {
+  margin: 0 40%;
+}
+
+.skills-hr {
+  margin: 0 40% 20px;
+}
+
+.about-sol-hr,
+.project-hr,
+.archiving-hr {
+  margin: 0 43%;
+}
+
+.programming-hr {
+  margin: 0 32%;
+}
+
+/* 반응형 레이아웃 */
+@media all and (max-width: 1024px) {
+  /* //브라우저 창 width가 1024px보다 작아지는 순간부터 적용 */
+  /* //태블릿 */
+}
+@media all and (max-width: 768px) {
+}
+@media all and (min-width: 768px) {
+  /* //브라우저 창 width가 768px보다 커지는 순간부터 적용 */
+  /* //태블릿 */
+  .links {
+    gap: 10px;
+  }
+}
+@media all and (min-width: 1024px) {
+  /* //브라우저 창 width가 1024px보다 커지는 순간부터 적용 */
+  /* //데스크탑 */
+}

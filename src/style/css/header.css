@@ -1,0 +1,17 @@
+.header-container{
+    justify-content: space-between;
+
+    padding: 10px 0;
+    
+    background-color: #FAF8F8;
+
+    color: #302c2c;
+}
+
+.nav-wrap{
+    font-weight: bold;
+}
+
+.nav-list{
+    margin: 0px 13px;
+}

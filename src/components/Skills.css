@@ -1,0 +1,189 @@
+.skills-container{
+  padding-bottom: var(--mp-5);
+}
+
+.backend-container,
+.frontend-container,
+.version-control-container,
+.communication-container {
+  flex-direction: column;
+}
+
+.backend-wrap-ui,
+.frontend-wrap-ui,
+.version-control-wrap-ui,
+.communication-wrap-ui {
+  margin-bottom: var(--mp-5);
+  padding: var(--mp-2);
+  gap: 50px;
+
+  border-radius: 5px;
+
+  background-color: var(--green-color-first);
+}
+
+.backend-wrap-ui {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.frontend-wrap-ui {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.version-control-wrap-ui {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.communication-wrap-ui {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.backend,
+.frontend,
+.version-control,
+.communication {
+  color: var(--green-color-first);
+  font-size: var(--h1-font-size);
+}
+
+.skills-item {
+  padding: var(--mp-0-75);
+
+  border-radius: 8px;
+  box-shadow: 28px 28px 28px var(--green-color-first);
+
+  background-color: var(--white-color);
+}
+
+.skills-title {
+  margin: var(--mp-0-5);
+
+  font-size: var(--h2-font-size);
+}
+
+.es6-box {
+  margin-top: var(--mp-0-75);
+}
+
+.skill-part-wrap-backend,
+.skill-part-wrap-frontend,
+.skill-part-wrap-version,
+.skill-part-wrap-communication {
+  gap: var(--mp-3);
+  margin: var(--mp-2) 0 var(--mp-0-25);
+}
+
+.skill-part-name {
+  font-size: var(--h1-font-size);
+  color: #e8e8e8;
+  justify-content: space-between;
+}
+
+.websiteUrl{
+  display: none;
+}
+
+/* 반응형 레이아웃 */
+@media all and (max-width: 1630px) {
+
+  .backend-wrap-ui,
+  .frontend-wrap-ui {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--mp-0-75);
+  }
+}
+
+@media all and (max-width: 1024px) {
+  /* //브라우저 창 width가 1024px보다 작아지는 순간부터 적용 */
+  /* //태블릿 */
+
+  .links {
+    gap: var(--mp-2);
+    font-size: var(--h2-font-size);
+  }
+
+  .backend-wrap-ui,
+  .frontend-wrap-ui {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--mp-0-75);
+  }
+}
+@media all and (max-width: 768px) {
+  .skill-part-wrap-version,
+  .skill-part-wrap-communication {
+    gap: 2px;
+    margin: 30px 0 5px;
+  }
+
+  .skill-part-wrap-backend {
+    gap: var(--mp-0-75);
+  }
+
+  .backend-wrap-ui,
+  .frontend-wrap-ui,
+  .version-control-wrap-ui,
+  .communication-wrap-ui {
+    margin: 0 10px 30px;
+    padding: var(--mp-1);
+    gap: var(--mp-0-75);
+
+    border-radius: var(--mp-0-5);
+
+    background-color: var(--green-color-first);
+  }
+
+  .backend-wrap-ui {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .frontend-wrap-ui {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .version-control-wrap-ui {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .communication-wrap-ui {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skills-item {
+    padding: 5px;
+
+    border-radius: var(--mp-0-5);
+    box-shadow: 18px 18px 18px var(--green-color-first);
+
+    background-color: var(--white-color);
+  }
+
+  .backend,
+  .frontend,
+  .version-control,
+  .communication {
+    color: var(--green-color-first);
+  }
+
+  .skill-part-name {
+    font-size: var(--h3-font-size);
+    justify-content: space-between;
+  }
+}
+@media all and (max-width: 768px) {
+  .skill-part-name{
+    display: none;
+  }
+
+}
+@media all and (min-width: 1024px) {
+  /* //브라우저 창 width가 1024px보다 커지는 순간부터 적용 */
+  /* //데스크탑 */
+}
+/* 
+@media all and (max-width:400px) {
+  .skill-part-wrap-backend,
+.skill-part-wrap-frontend,
+.skill-part-wrap-version,
+
+
+} */

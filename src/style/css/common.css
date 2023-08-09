@@ -1,0 +1,86 @@
+body,
+p,
+span,
+button,
+ul,
+ol,
+hr,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "GangwonEdu_OTFBoldA", sans-serif;
+}
+
+body {
+  color: #302c2c;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input {
+  cursor: pointer;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #302c2c;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.grid-box {
+  display: grid;
+}
+
+.center-box {
+  justify-content: center;
+  align-items: center;
+}
+
+.part-title {
+  padding-top: 60px;
+
+  border-bottom: 3px solid #00a086;
+
+  font-size: 48px;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.mini-title1,
+.mini-title2 {
+  margin-top: 25px;
+
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.fa-pagelines,
+.fa-edit {
+  color: #00a086;
+}
+
+.icon-color:hover {
+  color: #00a086;
+}
+
+.left-text {
+  text-align: left;
+}

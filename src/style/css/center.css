@@ -1,0 +1,331 @@
+.header-wrap {
+  align-items: center;
+}
+
+.header-nav-big-title {
+  margin-left: 15px;
+  padding-top: 10px;
+
+  font-size: 42px;
+}
+
+.nav-wrap-ui {
+  padding-top: 10px;
+  gap: 20px;
+
+  font-size: 30px;
+}
+
+/* part01 - intruduce */
+.intruduce-oneself-container {
+  padding: 35px;
+
+  background-color: #c7e3d5;
+}
+
+.intruduce-title {
+  font-size: 55px;
+  padding: 30px 0 5px;
+}
+
+.main-name {
+  margin-top: 30px;
+
+  font-size: 60px;
+}
+
+.recruit-button {
+  margin: 27px;
+  padding: 23px;
+
+  border-radius: 7px;
+
+  background-color: #00a086;
+
+  font-weight: bold;
+  font-size: 18px;
+  color: #e8e8e8;
+}
+
+/* park02 - About-sol */
+.about-sol-container {
+  background-color: #faf8f8;
+}
+
+.about-sol-list-wrap {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 260px 260px;
+
+  gap: 10px;
+}
+
+.skill-part-list-wrap {
+  gap: 20px;
+}
+
+/* 파트당 제목 밑줄 */
+.protfolio-hr {
+  border-bottom: 3px solid #00a086;
+  margin: 0 38%;
+}
+
+.before-career-hr {
+  margin: 0 40%;
+}
+
+.skills-hr {
+  margin: 0 45% 4%;
+}
+
+.about-sol-hr,
+.project-hr,
+.archiving-hr {
+  margin: 0 43%;
+}
+
+.programming-hr {
+  margin: 0 35%;
+}
+
+.about-sol-li {
+  padding: 40px;
+
+  font-size: 30px;
+}
+
+.detail-mini-text {
+  font-size: 20px;
+}
+
+.subway-wrap {
+  margin-top: 30px;
+  margin: 5px;
+  padding: 10px 12px;
+
+  border-radius: 50px;
+
+  background-color: #0052a4;
+
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* skills */
+.skills-container {
+  padding: 0 60px;
+}
+
+.project-wrap {
+  width: 1300px;
+  padding: 30px;
+}
+
+.backend-wrap-ui,
+.frontend-wrap-ui,
+.version-control-wrap-ui,
+.communication-wrap-ui {
+  margin: 0 50px 40px;
+  padding: 30px;
+
+  gap: 20px;
+
+  border-radius: 5px;
+
+  background-color: #36bc9b;
+}
+
+.backend-wrap-ui,
+.frontend-wrap-ui,
+.version-control-wrap-ui,
+.communication-wrap-ui {
+  margin: 0 50px 40px;
+  padding: 30px;
+
+  gap: 20px;
+
+  border-radius: 5px;
+
+  background-color: #36bc9b;
+}
+
+.backend-wrap-ui {
+  grid-template-columns: repeat(6, 1fr);
+  width: 70%;
+}
+
+.frontend-wrap-ui {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.version-control-wrap-ui {
+  grid-template-columns: repeat(2, 1fr);
+  width: 20%;
+}
+
+.communication-wrap-ui {
+  grid-template-columns: repeat(3, 1fr);
+  width: 33%;
+}
+
+.backend,
+.frontend,
+.version-control,
+.communication {
+  color: #00a086;
+  font-size: 30px;
+}
+
+.skills-item {
+  padding-bottom: 10px;
+
+  border-radius: 8px;
+  box-shadow: 28px 28px 28px #00a086;
+
+  background-color: #fff;
+}
+
+.skills-title {
+  margin: 10px;
+
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.skill-part-name {
+  margin: 0 10%;
+
+  font-size: 30px;
+  color: #e8e8e8;
+}
+
+/* part04 - projects */
+.projects-container {
+  padding: 30px;
+
+  background-color: #c7e3d5;
+}
+
+.project-wrap {
+  margin: 30px;
+
+  border-radius: 8px;
+
+  background-color: #fff;
+}
+
+.project-image {
+  margin: 0 5px 0 30px;
+}
+
+.project-detail {
+  margin: 0 30px 0 5px;
+
+  font-size: 25px;
+}
+
+.project-title {
+  padding-top: 30px;
+}
+
+.project-detail {
+  flex-direction: column;
+}
+
+.project-detail-skills-ui {
+  margin: 30px;
+}
+
+/* part05 - Archiving */
+.archiving-container {
+  background-color: #333;
+
+  font-size: 20px;
+}
+
+.archiving-wrap-ui {
+  gap: 23px;
+}
+
+.archiving-box {
+  height: 300px;
+  margin: 30px 10px;
+  padding: 20px;
+
+  border-radius: 5px;
+
+  background-color: #fff;
+}
+
+.archiving-box-title {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.archiving-box-li {
+  margin: 10px 0;
+}
+
+.programming-education-box,
+.team-project-self-study-box {
+  height: 600px;
+
+  margin: 50px 20px;
+  padding: 20px;
+
+  border-radius: 5px;
+
+  background-color: #fff;
+}
+
+.archiving-img {
+  margin-top: 20px;
+}
+
+/*  part06 - Programming Experience */
+.programming-experience-container {
+  background-color: #faf8f8;
+
+  font-size: 20px;
+}
+
+.programming-education-wrap-ui,
+.team-project-self-study-wrap-ui {
+  margin: 20px 0;
+}
+
+.experience-li {
+  margin: 7px 0;
+}
+
+/* part07 - Before Career */
+.before-career-container {
+  background-color: #fff;
+}
+
+.career-title {
+  margin: 7px;
+
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.career-list-box {
+  padding: 10px;
+}
+
+.content-left-wrap,
+.content-right-wrap {
+  height: 350px;
+
+  margin: 50px 20px;
+  padding: 20px;
+
+  border-radius: 5px;
+
+  background-color: #faf8f8;
+}
+
+.before-career-li {
+  margin: 7px 0;
+}

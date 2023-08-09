@@ -1,0 +1,210 @@
+.heart-container {
+  position: absolute;
+  z-index: 1;
+
+  padding-left: 62%;
+  padding-top: -10px;
+}
+
+.heart {
+  height: 30px;
+  width: 30px;
+
+  position: absolute;
+  transform: rotate(-45deg);
+
+  box-shadow: -10px 10px 90px rgb(244, 67, 54);
+  animation: heart 0.6s linear infinite;
+
+  background: rgb(244, 67, 54);
+}
+
+@keyframes heart {
+  0% {
+    transform: rotate(-45deg) scale(1.07);
+  }
+  80% {
+    transform: rotate(-45deg) scale(1);
+  }
+  100% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+}
+
+.heart:before {
+  top: -50%;
+  left: -1%;
+
+  content: "";
+  position: absolute;
+
+  height: 30px;
+  width: 30px;
+
+  background: rgb(244, 67, 54);
+  border-radius: 50px;
+
+  box-shadow: 5px 5px 30px rgb(244, 67, 54);
+}
+
+.heart:after {
+  right: -50%;
+
+  content: "";
+  position: absolute;
+
+  height: 30px;
+  width: 30px;
+
+  background: rgb(244, 67, 54);
+  border-radius: 50px;
+
+  box-shadow: 10px 10px 90px rgb(244, 67, 54);
+}
+
+/* heart2 */
+div.heart2 {
+  position: absolute;
+  top: -60px;
+  left: 360px;
+}
+
+.heart2 {
+  position: absolute;
+  top: -60px;
+  left: 360px;
+
+  height: 30px;
+  width: 30px;
+
+  position: relative;
+  transform: rotate(-45deg);
+  box-shadow: -10px 10px 90px rgb(244, 67, 54);
+  animation: heart 0.6s linear infinite;
+
+  background: rgb(244, 67, 54);
+}
+
+@keyframes y {
+  0% {
+    transform: rotate(-45deg) scale(1.07);
+  }
+  80% {
+    transform: rotate(-45deg) scale(1);
+  }
+  100% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+}
+
+.heart2:before {
+  top: -50%;
+  left: -1%;
+
+  content: "";
+  position: absolute;
+
+  height: 30px;
+  width: 30px;
+
+  background: rgb(244, 67, 54);
+  border-radius: 50px;
+  box-shadow: 5px 5px 30px rgb(244, 67, 54);
+}
+
+.heart2:after {
+  right: -50%;
+
+  height: 30px;
+  width: 30px;
+
+  content: "";
+  position: absolute;
+
+  background: rgb(244, 67, 54);
+
+  border-radius: 50px;
+  box-shadow: 10px 10px 90px rgb(244, 67, 54);
+}
+
+/* heart3 */
+
+.heart3 {
+  position: absolute;
+  top: -350px;
+  left: 460px;
+
+  height: 30px;
+  width: 30px;
+
+  position: relative;
+  transform: rotate(-45deg);
+  box-shadow: -10px 10px 90px rgb(244, 67, 54);
+  animation: heart 0.6s linear infinite;
+
+  background: rgb(244, 67, 54);
+}
+
+@keyframes heart3 {
+  0% {
+    transform: rotate(-45deg) scale(1.07);
+  }
+  80% {
+    transform: rotate(-45deg) scale(1);
+  }
+  100% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+}
+
+.heart3:before {
+  top: -50%;
+  left: -1%;
+
+  height: 30px;
+  width: 30px;
+
+  content: "";
+  position: absolute;
+
+  background: rgb(244, 67, 54);
+  border-radius: 50px;
+
+  box-shadow: 5px 5px 30px rgb(244, 67, 54);
+}
+
+.heart3:after {
+  right: -50%;
+
+  height: 30px;
+  width: 30px;
+
+  content: "";
+  position: absolute;
+
+  background: rgb(244, 67, 54);
+  border-radius: 50px;
+
+  box-shadow: 10px 10px 90px rgb(244, 67, 54);
+}
+
+@media screen and (max-width: 768px) {
+  div.heart2 {
+    position: fixed;
+    top: -190px;
+    left: 350px;
+  }
+
+  .heart,
+  .heart3 {
+    display: none;
+  }
+}
+
+
+/* 반응형 레이아웃 */
+@media all and (max-width: 1024px) {
+  .heart, .heart2, .heart3{
+    display: none;
+  }
+}

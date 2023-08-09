@@ -1,0 +1,86 @@
+.contact-container {
+  top: 0;
+  left: 0;
+
+  z-index: 10;
+
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.form-container {
+  flex-direction: column;
+
+  width: 400px;
+  height: 286px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+
+  padding: 20px 7px;
+
+  background-color: #fff;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.contact-title-container {
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.contact-title {
+  color: #302c2c;
+  font-size: 22px;
+}
+
+.close-button {
+  position: relative;
+  top: 10%;
+  left: 100%;
+
+  justify-content: flex-end;
+
+  padding-right: 5px;
+
+  background-color: transparent;
+  font-size: 30px;
+  color: #302c2c;
+
+  transform: translate(-50%, -50%);
+}
+
+.contact-input {
+  margin: 5px 10px;
+  padding: 5px;
+
+  background-color: #f5f5f5;
+
+  font-size: 16px;
+}
+
+.submit-buttom {
+  width: 200px;
+
+  margin: 10px auto 0;
+  padding: 15px;
+
+  background-color: rgb(244 67 54);
+
+  font-size: 18px;
+  color: #fff;
+}
+
+@media all and (max-width: 500px){
+  /* //브라우저 창 width가 768px보다 작아지는 순간부터 적용 */
+  /* //모바일 */
+  .contact-container {
+    display: none;
+  }
+ 
+}

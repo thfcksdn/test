@@ -1,0 +1,167 @@
+/* header-start */
+
+.navBar-container {
+  justify-content: space-between;
+  background-attachment: fixed;
+  position: fixed;
+  width: 100%;
+  color: var(--text-color);
+  background-color: var(--white-color-second);
+  padding-top: var(--mp-0-75);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header-nav-big-title,
+.navbar-wrap {
+  background-color: transparent;
+}
+
+.header-nav-big-title:hover {
+  color: var(--green-color-first);
+}
+
+.header-nav-big-title {
+  font-size: var(--h1-font-size);
+  padding-left: var(--mp-0-5);
+}
+
+.navbar-toogleButton {
+  position: absolute;
+  right: var(--mp-1);
+  font-size: var(--big-font-size);
+  color: var(--text-color);
+  display: none;
+  transition: all 0.3s linear;
+}
+
+/* header-end */
+.links-container {
+  overflow: hidden;
+}
+
+.narBar-li:hover {
+  color: var(--green-color-first);
+  cursor: pointer;
+  padding: 5px;
+}
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .links-container {
+    height: auto !important;
+    font-size: var(--h2-font-size);
+  }
+
+  .links {
+    display: flex;
+    gap: var(--mp-2);
+    padding-right: var(--mp-1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* hearBeat */
+  .heart,
+  .heart,
+  .heart3 {
+    display: none;
+  }
+
+  /* header start */
+  .navBar-container {
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-nav-big-title {
+    font-size: 24px;
+    padding-top: 3px;
+  }
+
+  .narBar-box,
+  .navbar-wrap {
+    display: none;
+  }
+
+  .narBar-li {
+    padding-top: var(--mp-0-75);
+  }
+
+  .narBar-li:hover {
+    background-color: var(--green-color-first);
+    color: var(--white-color);
+    border-radius: 3px;
+  }
+
+  .navbar-toogleButton {
+    display: block;
+    background: transparent;
+  }
+
+  /* main start */
+  .main-name {
+    font-size: var(--normal-font-size);
+  }
+
+  .mini-title {
+    margin-top: var(--mp-1);
+  }
+
+  .protfolio-hr {
+    margin: 0 2%;
+  }
+
+  .programming-education-box,
+  .team-project-self-study-box {
+    height: auto;
+
+    margin: 50px var(--mp-1);
+    padding: var(--mp-2);
+
+    border-radius: 5px;
+
+    background-color: var(--white-color);
+  }
+
+  /*  part06 - Programming Experience */
+  .programming-hr {
+    margin: 0 10%;
+  }
+
+  .programming-experience-wrap {
+    flex-direction: column;
+  }
+
+  .programming-education-box,
+  .team-project-self-study-box {
+    height: auto;
+    margin: var(--mp-1);
+  }
+}
+
+@media all and (max-width: 400px) {
+  .navbar-toogleButton {
+    position: absolute;
+    right: var(--mp-2);
+  }
+}
+
+@media all and (min-width: 410px) {
+  .navbar-toogleButton {
+    /* position: absolute; */
+    right: var(--mp-2);
+  }
+}
+
+@media all and (max-width: 350px) {
+  .navbar-toogleButton {
+    right: var(--mp-2-5);
+  }
+}
